@@ -17,7 +17,10 @@ body {
 
 .header h1 {
     display: inline-block;
-    font-size: 48px; 
+    font-size: 48px;
+}
+
+.seo {
     color: #d9dcd6;
 }
 
@@ -27,13 +30,17 @@ body {
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+    list-style-type: none
 }
 
-.header div ul li{
-    list-style-type: none;
+/* removed ".header ul" and added list-style-type under ".header div" */
+
+.header div li {
     display: inline-block;
     margin-left: 25px;
 }
+
+/* removed "ul" tag because it was unecessary */
 
 a {
     color: #ffffff;
@@ -42,9 +49,9 @@ a {
 
 p {
     font-size: 16px;
-    color: #ffffff;
-    text-decoration: none;
+    margin-bottom: 25px;
 }
+/* Added margins to the bottom of the paragraphs to properly space box on right side */
 
 .hero {
     height: 800px;
@@ -65,12 +72,6 @@ p {
     margin-left: 25px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -87,6 +88,7 @@ p {
 .benefits h3 {
     margin-bottom: 10px;
     text-align: center;
+   
 }
 
 .benefits img {
@@ -94,8 +96,9 @@ p {
     margin: 10px auto;
     max-width: 150px;
 }
+/* consolidated code under the ".benefits" tag */
 
-.search {
+.search-engine-optimization, .online-reputation-management, .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -104,24 +107,28 @@ p {
     color: #ffffff;
 }
 
-.search img {
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+.content img {
     max-height: 200px;
-    
 }
 
-
-.search h2 {
+.content h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
+/* consolidated code underneath the ".content" tag */
 
 .footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    font-size: 20px;
-    font: optional;
 }
 
+.footer h2 {
+    font-size: 20px;
+}
