@@ -13,6 +13,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    flex-wrap: wrap;
 }
 
 .header h1 {
@@ -24,7 +25,7 @@ body {
     color: #d9dcd6;
 }
 
-.header div {
+.header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -33,14 +34,12 @@ body {
     list-style-type: none
 }
 
-/* removed ".header ul" and added list-style-type under ".header div" */
 
-.header div li {
+
+.header nav li {
     display: inline-block;
     margin-left: 25px;
 }
-
-/* removed "ul" tag because it was unecessary */
 
 a {
     color: #ffffff;
@@ -51,7 +50,7 @@ p {
     font-size: 16px;
     margin-bottom: 25px;
 }
-/* Added margins to the bottom of the paragraphs to properly space box on right side */
+
 
 .hero {
     height: 800px;
@@ -96,9 +95,9 @@ p {
     margin: 10px auto;
     max-width: 150px;
 }
-/* consolidated code under the ".benefits" tag */
 
-.search-engine-optimization, .online-reputation-management, .social-media-marketing {
+
+.contents{
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -120,7 +119,7 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
-/* consolidated code underneath the ".content" tag */
+
 
 .footer {
     padding: 30px;
